@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primrose By Rosa | Pearl Things</title>
+    <style>
+        body{
+            background-color: rgb(243, 207, 207);
+            font-style: oblique;
+        }
+        header{
+            background-color: rgb(243, 207, 207);
+            text-align: center;
+            color: rgb(82, 36, 36);
+            height: 300px;
+            width: 100%;
+        }
+        header img{
+            height: 150px;
+            width: 150px;
+            border-color: rgb(122, 57, 57);
+            border-radius: 50%;
+            border: 3px solid rgb(133, 44, 44);
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(212, 127, 127);
+            display: flex;
+            justify-content: center;
+            }
+
+        ul li {
+            float: left;
+            border-right:1px solid #916e6e;
+            }
+            
+        ul li:last-child {
+            border-right: none;
+            }
+            
+        ul {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            }
+            
+        ul {
+            position: sticky;
+            top: 0;
+            }
+        ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            }
+
+        ul li a:hover {
+            background-color: #df9898;
+            }
+        .dropbtn {
+            background-color: rgb(212, 127, 127);
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            }
+
+        .dropdown {
+            position: relative;
+            }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #e78e8e;
+            min-width: 80px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1000;
+            }
+
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            }
+
+        .dropdown-content a:hover {
+            background-color: rgb(212, 127, 127);
+            }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+            }
+        .dropdown:hover .dropbtn {
+            background-color: #df9898;
+            }
+        
+        .dropbtn::after {
+            content: " ▼";
+            font-size: 10px;
+            padding-left: 5px; 
+            vertical-align: middle;
+        } 
+        .dropdown:hover .dropbtn::after {
+            display: inline-block;
+            transform: rotate(180deg);
+            transition: 0.1s;
+        }
+        aside{
+            background-color: #db9696;
+            color: rgb(233, 203, 203);
+            height: 1600px;
+            width: 20%;
+            float: left;
+            text-align: center;
+        }
+        aside h2{
+            color: #6e3737;
+            
+        }
+        
+        aside img{
+            height: 70px;
+            width: 70px;
+            border-color: rgb(122, 57, 57);
+            border-radius: 50%;
+            border: 1px solid rgb(133, 44, 44);
+            margin-top: 2cm;
+        }
+        a:link {
+                color: rgb(63, 17, 17);
+                background-color: transparent;
+                text-decoration: none;
+        }
+        a:visited {
+                    color: rgb(66, 9, 9);
+                    background-color: transparent;
+                    text-decoration: none;
+         }
+        a:hover {
+                    color: rgb(141, 43, 43);
+                    background-color: transparent;
+                    text-decoration: underline;
+        }
+        a:active {
+                    color: rgb(150, 28, 28);
+                    background-color: transparent;
+                    text-decoration: underline;
+        }
+        section1{
+            color: rgb(255, 255, 255);
+            height: 600px;
+            width: 80%;
+            float: left;
+            background-color: #eea8a8;
+        }
+        section1 h1{
+            padding-left: 1.5cm;
+            padding-top: 1.5cm;
+        }
+        section1 h2{
+            padding-left: 5cm;
+            padding-top: 1.5cm;
+            color:rgb(104, 46, 46) ;
+        }
+        section1 img {
+            width: 100%;
+            border-radius: 25px;
+            border: 2px solid rgb(243, 235, 235);
+            margin-left: 4cm;
+            margin-top: 0.5cm;
+        } 
+        
+        section2{
+            color: rgb(255, 255, 255);
+            height: 400px;
+            width: 80%;
+            float: left;
+            background-color: #eea8a8;
+        }
+        section2 h1{
+            padding-left: 11cm;
+            padding-top: 1.5cm;
+            color:rgb(102, 30, 30) ;
+        } 
+        section2 img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        section4{
+            color: rgb(255, 255, 255);
+            height: 600px;
+            width: 80%;
+            float: left;
+            background-color: #eea8a8;
+        }
+        section4 h2{
+            padding-left: 8cm;
+            padding-top: 1.5cm;
+            color:rgb(104, 46, 46) ;
+        }
+        section4 img {
+            width: 100%;
+            border-radius: 25px;
+            border: 2px solid rgb(243, 235, 235);
+            margin-left: 4cm;
+            margin-top: 0.5cm;
+        }  
+        .imgbox {
+            float: left;
+            text-align: center;
+            width: 150px;
+            height: 200px;
+            border: 2px solid rgb(248, 215, 215);
+            border-radius: 5px;
+            margin-left: 1cm;
+            margin-top: 0.5cm;
+            padding: 3px;
+            color: #803131;
+        }
+        button {
+            width: 100%;
+            height: 60px;
+            background-color: #f7b7b7;
+            color: #6e3737;
+            border: 1px solid rgb(170, 100, 100);
+         }
+        footer{
+            color: rgb(82, 36, 36);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Primrose By Rosa</h1>
+        <img src="/projectimage/logo.jpg">
+        <h3>Local Crafts and Gift Shop for the beloved ones</h3>
+        <ul>
+            <li><a href="Index.html">Home</a></li>
+            <li class="dropdown">
+            <a href="Item.html"class="dropbtn" >Items</a>
+            <div class="dropdown-content">
+                <a href="Necklace.html">Necklaces</a>
+                <a href="Ring.html">Rings</a>
+                <a href="Earning.html">Earnings</a>
+                <a href="Bracelet.html">Bracelets</a>
+                <a href="Set.html">Sets</a>
+                <a href="Handbag.html">Handbags</a>
+            </div>
+        </li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="About.html">About</a></li>
+            <li style="float:right"><a href="#search">Search</a></li>
+        </ul>
+    </header>
+    <aside>
+        
+        <img src="/projectimage/logo.jpg"><br><br>
+        <h2>"Primrose By Rosa"</h2><br><hr><br>
+                <a href="Index.html">Home</a><br><br>
+                <a href="Contact.html">Contact</a><br><br>
+                <a href="About.html">About</a><br><br><hr>
+                <a href="Necklace.html">Necklaces</a><br><br>
+                <a href="Ring.html">Rings</a><br><br>
+                <a href="Earning.html">Earnings</a><br><br>
+                <a href="Bracelet.html">Bracelets</a><br><br>
+                <a href="Set.html">Sets</a><br><br>
+                <a href="Handbag.html">Handbags</a><br><br><hr>
+                
+    </aside>
+    <section1>
+        <h1>Level Up Your Style With Our Premium Quality Handmade Accessories!</h1>
+        <h2>"A woman's beauty is only enhanced by the glow of a pearl."</h2>
+        <img src="/projectimage/demo.png" alt="HTML5 Icon" style="width:700px;height:300px;">
+    </section1>
+    <section2>
+        <h1>"Best Sellers"</h1>
+        <div class="imgbox" id="imgbox1"><b></b><br>
+            <img src="/projectimage/n22.jpg" alt="Italy" style="width:140px;height: 120px;">
+            <button onclick="removeElement()">Floral necklace • 43000 ks</button>
+        </div>
+        <div class="imgbox" id="imgbox1"><b></b><br>
+            <img src="/projectimage/r11.jpg" alt="Italy" style="width:140px;height: 120px;">
+            <button onclick="removeElement()">Ring • 15000 ks</button>
+        </div>
+        <div class="imgbox" id="imgbox1"><b></b><br>
+            <img src="projectimage/hc1.jpg" alt="Italy" style="width:140px;height: 120px;">
+            <button onclick="removeElement()">Remove</button>
+        </div>
+        <div class="imgbox" id="imgbox1"><b></b><br>
+            <img src="projectimage/e1.jpg" alt="Italy" style="width:140px;height: 120px;">
+            <button onclick="removeElement()">Earnings • 22500 ks</button>
+        </div>
+        <div class="imgbox" id="imgbox1"><b></b><br>
+            <img src="projectimage/1set11.jpg" alt="Italy" style="width:140px;height: 120px;">
+            <button onclick="removeElement()">Necklace • 98000 mmk</button>
+        </div>
+    </section2>
+    <section4>
+        <h2>"Pearls make you look elegant."</h2>
+        <img src="/projectimage/demo1.png"alt="HTML5 Icon" style="width:700px;height:300px;">
+    </section4>
+    <footer>
+        <h3>2026 Primrose by Rosa. All rights reserved.</h3>
+        <h5>Phone Number- 09123456789</h5>
+        <h5>Email-rosa@gmail.com</h5>
+    </footer>
+</body>
+</html>
